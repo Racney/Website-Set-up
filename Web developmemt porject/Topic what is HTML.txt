@@ -1,0 +1,20 @@
+Topic: what is HTML?
+
+note: Hpertext Markup Language. <p>段文符号，将文字打包成一段一段的。void element： <hr /> 分界线符号，在两个段落之间产生一条分界线。
+<br />在段落之间使用，例如将诗歌分隔成小段落。
+<p>paragraph 1</p>  is better than  <p> Paragraph 1<br/> 
+<p>paragraph 2</p>                      Paragraph 2<br/></p> because the second way is not good for accessibility.
+<ul>无序列表，就是不带数字的
+<ol>有序列表，就是带数字的
+这些列表中间需要用<li></li>
+20.anchor elements
+
+keyword: Hypertext, h1>h2>...>h6, 不要同时又多个h1
+don't:h1 don't jump to h3, don't jump.  
+
+
+
+
+
+Summary:<h1-h6>  <br/> <hr/>  <ol> <ul> <li> <a> <p> <a herf = "url">  <img src= "url"/>
+
