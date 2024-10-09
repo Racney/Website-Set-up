@@ -1,0 +1,28 @@
+#title{
+    text-align: center;
+    font-weight: 500;
+    font-family: "updock",cursive;
+    font-size:60px;
+}
+html{
+    background-color: bisque;
+}
+
+hr{
+    border:none;
+    height:1px;
+    background-color: black;
+}
+
+.List{
+    font-family: "updock", cursive;
+    font-size: 40px;
+    
+}
+
+.menu-price{
+    font-family:"updock",cursive;
+    font-size:40px;
+    text-align: right;
+
+}
