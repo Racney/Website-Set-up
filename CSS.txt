@@ -1,0 +1,88 @@
+CSS
+
+Three way to add CSS: 
+1. Inline <tag style = "css"/>
+2.Internal <style>css</style>
+3.External <link href="style.css"/>
+
+1.Inline
+<html style ="background:blue">
+</html>
+It's not for using in entire file, but it's good for using int one line element. 
+
+2. Internal
+<html>
+    <head> 
+        <style> 
+            html{
+              background:red;
+            }
+        </style>
+    </head>
+</html>
+
+3.External CSS
+External CSS is in different file.
+
+<html>
+   <head>
+      <link 
+         rel="stylesheet"
+         href="./styles.css"
+      />
+   </head>
+</html>
+
+
+CSS Selector: h1 {
+color : blue
+}
+This means we select h1 to be our aim
+
+1.最简单的就是直接选大类，类似h1,h2直接选
+2.第二种是class selector,在element前面加上它的class，然后针对class来进行css代码执行。
+3.ID selector, id和class的操作一样，但是id只能匹配一个，而class可以匹配很多个。#(id){color : red;}
+4. Attribute Selector:p[draggable]{color : red;}
+5.Universal Selector: * {color:red;} means select all. 
+
+
+
+Font Properties: 
+1.font-weight:bold 
+2.font-size:20px (调整字体大小） ，1px,1pt 
+3.font-family:sans-serif （调整字体） 
+
+border: 10px solid  black; 
+        size  type  color 
+border-width: 10px 20px 30px 40px 
+              top  right bottom left 
+              10px      20px
+        top and bottom  left and right
+
+
+
+
+order: 1.id 2.attribute 3.class 4.element 
+CSS order:1.inline 2.internal 3.external
+color:red 
+color:green !important;
+
+
+1. h1,h2{
+   color:purpel;
+} 两个元素可以联合一起，方便修改
+
+2. Child
+selector > selector {
+color:firebrick;
+}
+first one is parent
+second one is child
+举个例子：class = box里面选择paragraph，就是.box > p{}
+
+3.Ancestor and descendant: 
+selector selector {}
+parent的加强版，可以隔三层element，parent只能隔一层
+
+4.chaining
+
