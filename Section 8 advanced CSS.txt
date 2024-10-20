@@ -1,0 +1,100 @@
+Section 8 advanced CSS 
+
+1.Display
+
+<span></span>通常在元素之间抓取某个特定的东西使用。
+
+1.display: inline. 
+例如：
+<h2>harry</h2>
+<h2>Potter</h2>
+由于display是inline，所以这两行文字会成为一行，
+inline模式下，你无法改变元素的大小。 
+
+2.display : block（默认）
+block会让单一元素占用一整行。
+
+3.display : inline-block
+这个模式下，允许我们设置元素大小，也允许两个元素在同一行。
+
+4.display: none
+所有的元素消失，可以做成一个按钮，让所有东西出现或者消失。
+
+
+Part 2 
+CSS Float
+img {
+float:left;
+} 让图片float到左边，文字则会占据原本图片的右边的位置。
+
+footer{
+clear:both/right/left;
+}
+可以让某段文字在此之外。
+
+
+Part 3
+Responsive Website 
+4 ways to do it: 
+
+1.Media Queries:
+@media(max-width:600px){
+   这条CSS仅在600px以下有效
+}
+
+
+2.CSS Grid：
+display:grid 意味着我们使用grid来布局
+grid-template-column:1fr 1fr; （两个column）
+grid-template-rows:100px 200px 200px;（三行，分别是每一行的高度）
+gap:30px；（这个是每一行的gap）
+
+.first{
+grid-column:span 2; 让一个column占据两个column
+}
+
+.card{
+background-color:blue;
+}
+
+
+3.CSS Flexbox:
+.flex-container{
+display:flex；代表使用flexbox进行布局
+}
+
+.card{
+background:blue;
+border:30px solid white;
+height:100px;
+flex:1； （意思是把宽度平均的分给每一个）
+
+.first{
+flex:2;
+}可以通过更细的设置，来设置不同的box width多大。
+
+.second{
+flex:0.5
+}
+
+4.External Frameworkds e.g. Bootstrap.
+
+
+Part 4 Media Query (specifically)
+
+@media(max-width:600px){
+     h1{
+         font-size:15px;
+       }
+} 使用medai的时候需要在内部加上需要使用的元素是什么。
+
+@media(max-width:600px) and (min-width:900px){
+}
+我们可以combine两个不同的range进行结合使用
+
+@media screen(orientation:landscape){
+   } 这个是打印的时候使用的
+
+
+
+
