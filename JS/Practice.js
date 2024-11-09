@@ -1,20 +1,12 @@
-
-
-
-function isLeap(year){
-    if (year % 4 === 0){
-        if (year % 100 ===0){
-            if (year % 400 === 0){
-                return "It's a leap year"
-            }
-
-        }else{
-            return "not a leap year"
-        }
-
-    } else{
-        return "not a leap year"
+x= prompt("Hello, what is your name?");
+var guest = ["Randy","Rae"]; 
+function name(){
+    if (guest.includes(x)===true){
+        alert("welcome to my website!")
+    }else{
+        alert("Sorry, you are not allowed to access this website.")
     }
 }
 
-isLeap(2000)
+name();
+
